@@ -1,4 +1,4 @@
-(function () {
+const navbar = () => {
   const navbarTogler = document.querySelector('.navbar .navbar-toggler');
   const navbarNav = document.querySelector('.navbar .navbar-nav');
 
@@ -10,4 +10,6 @@
       navbarNav.classList.remove('open');
     }
   });
-})();
+}
+
+export default navbar;

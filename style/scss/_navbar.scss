@@ -64,6 +64,7 @@
         transition: 0.3s;
         padding: 0 1.5rem;
         height: 0;
+        margin: 0;
 
         .nav-item {
           width: 540px;
@@ -86,6 +87,7 @@
       .navbar-nav.open {
         padding: 0.5rem 1.5rem;
         height: 225px;
+        border-top: 1px solid $light;
       }
     }
   }
