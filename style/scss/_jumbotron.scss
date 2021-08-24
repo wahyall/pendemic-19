@@ -1,9 +1,175 @@
 .jumbotron {
-  height: 90vh;
+  min-height: 100vh;
+  max-height: 750px;
   padding-top: 67px;
 
-  h1 {
+  .headline {
+    margin-top: 3rem;
+
+    @media (max-width: 768px) {
+      & {
+        margin-top: 5rem;
+      }
+    }
+
+    h1 {
+      text-align: center;
+      margin-bottom: 1rem;
+      font-weight: 700;
+      letter-spacing: 1px;
+
+      @media (max-width: 768px) {
+        & {
+          text-align: left;
+        }
+      }
+    }
+
+    p {
+      font-size: 1.2rem;
+      text-align: center;
+      margin-bottom: 0;
+
+      @media (max-width: 1200px) {
+        & {
+          font-size: 1.1rem;
+        }
+      }
+
+      @media (max-width: 992px) {
+        & {
+          font-size: 1rem;
+        }
+      }
+
+      @media (max-width: 768px) {
+        & {
+          text-align: left;
+          font-size: 1.1rem;
+        }
+      }
+    }
+
+    .cta {
+      background-color: $red;
+      padding: 0.5rem 1.5rem;
+      border-radius: 4px;
+      margin: 1.5rem auto;
+      display: block;
+      width: max-content;
+
+      @media (max-width: 768px) {
+        & {
+          margin: 1.5rem 0;
+        }
+      }
+    }
+  }
+
+  .case {
     text-align: center;
-    padding: 2rem 0;
+    margin-top: 2rem;
+
+    @media (max-width: 768px) {
+      margin-top: 4rem;
+    }
+
+    img {
+      width: 480px;
+      max-width: 100%;
+      transform: translateY(5%);
+      z-index: 1;
+      position: relative;
+    }
+
+    .widget {
+      z-index: 2;
+      display: flex;
+      background-color: $light;
+      border-radius: 4px;
+      justify-content: center;
+      align-items: center;
+      margin: 0 auto;
+      position: relative;
+      width: max-content;
+      box-shadow: 0 0 1rem rgba($color: $dark, $alpha: 0.2);
+      padding: 1rem;
+
+      @media (max-width: 992px) {
+        & {
+          display: grid;
+          grid-template-columns: 1fr 1fr;
+          grid-template-rows: auto auto;
+          column-gap: 2rem;
+        }
+      }
+
+      @media (max-width: 768px) {
+        & {
+          width: 100%;
+        }
+      }
+
+      @media (max-width: 576px) {
+        & {
+          display: flex;
+          flex-wrap: wrap;
+
+          li {
+            margin-bottom: 0.5rem;
+            width: 100%;
+          }
+
+          li:last-child {
+            margin-bottom: 0;
+          }
+        }
+      }
+
+      li {
+        display: grid;
+        grid-template-rows: auto auto auto;
+        padding: 1rem 1.5rem;
+
+        span {
+          line-height: 1em;
+          font-weight: 600;
+        }
+
+        .tag {
+          text-transform: uppercase;
+          margin-bottom: 0.75rem;
+          white-space: nowrap;
+        }
+
+        .value {
+          font-size: 1.5rem;
+          font-weight: 700;
+          margin-bottom: 0.15rem;
+        }
+
+        .orang {
+          font-size: 0.75rem;
+        }
+      }
+
+      li.positif {
+        .value {
+          color: #edbd00;
+        }
+      }
+
+      li.sembuh {
+        .value {
+          color: #03a30b;
+        }
+      }
+
+      li.meninggal {
+        .value {
+          color: #e4122a;
+        }
+      }
+    }
   }
 }

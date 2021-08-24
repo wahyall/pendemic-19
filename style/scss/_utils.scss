@@ -2,7 +2,7 @@
 $dark: #000b24;
 $blue: #03267a;
 $light: #ffffff;
-$red: #ff3372;
+$red: #ff3347;
 
 // Reboot
 :root {
@@ -44,6 +44,7 @@ a:hover,
 a:active {
   text-decoration: none;
   color: inherit;
+  display: inline-block;
 }
 
 h6,
@@ -59,7 +60,7 @@ h1 {
 }
 
 h1 {
-  font-size: calc(1.375rem + 1.2vw);
+  font-size: calc(1.35rem + 1.2vw);
 }
 @media (min-width: 1200px) {
   h1 {
@@ -178,7 +179,7 @@ textarea {
 }
 
 .text-red {
-  color: #ff3372;
+  color: #ff3347;
 }
 
 // Background
@@ -191,7 +192,7 @@ textarea {
 }
 
 .bg-red {
-  background-color: #ff3372;
+  background-color: #ff3347;
 }
 
 .bg-none {

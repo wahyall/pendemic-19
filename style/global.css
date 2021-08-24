@@ -38,6 +38,7 @@ a:hover,
 a:active {
   text-decoration: none;
   color: inherit;
+  display: inline-block;
 }
 
 h6,
@@ -53,7 +54,7 @@ h1 {
 }
 
 h1 {
-  font-size: calc(1.375rem + 1.2vw);
+  font-size: calc(1.35rem + 1.2vw);
 }
 
 @media (min-width: 1200px) {
@@ -174,7 +175,7 @@ textarea {
 }
 
 .text-red {
-  color: #ff3372;
+  color: #ff3347;
 }
 
 .bg-blue {
@@ -186,7 +187,7 @@ textarea {
 }
 
 .bg-red {
-  background-color: #ff3372;
+  background-color: #ff3347;
 }
 
 .bg-none {
@@ -199,6 +200,7 @@ textarea {
   top: 0;
   left: 0;
   right: 0;
+  z-index: 9;
 }
 
 .navbar .wrapper {
@@ -250,7 +252,7 @@ textarea {
 }
 
 .navbar .wrapper .navbar-nav .nav-item .nav-link:active {
-  color: #ff3372;
+  color: #ff3347;
 }
 
 .navbar .wrapper .navbar-nav .nav-item:last-child {
@@ -300,12 +302,193 @@ body {
 }
 
 .jumbotron {
-  height: 90vh;
+  min-height: 100vh;
+  max-height: 750px;
   padding-top: 67px;
 }
 
-.jumbotron h1 {
+.jumbotron .headline {
+  margin-top: 3rem;
+}
+
+@media (max-width: 768px) {
+  .jumbotron .headline {
+    margin-top: 5rem;
+  }
+}
+
+.jumbotron .headline h1 {
   text-align: center;
-  padding: 2rem 0;
+  margin-bottom: 1rem;
+  font-weight: 700;
+  letter-spacing: 1px;
+}
+
+@media (max-width: 768px) {
+  .jumbotron .headline h1 {
+    text-align: left;
+  }
+}
+
+.jumbotron .headline p {
+  font-size: 1.2rem;
+  text-align: center;
+  margin-bottom: 0;
+}
+
+@media (max-width: 1200px) {
+  .jumbotron .headline p {
+    font-size: 1.1rem;
+  }
+}
+
+@media (max-width: 992px) {
+  .jumbotron .headline p {
+    font-size: 1rem;
+  }
+}
+
+@media (max-width: 768px) {
+  .jumbotron .headline p {
+    text-align: left;
+    font-size: 1.1rem;
+  }
+}
+
+.jumbotron .headline .cta {
+  background-color: #ff3347;
+  padding: 0.5rem 1.5rem;
+  border-radius: 4px;
+  margin: 1.5rem auto;
+  display: block;
+  width: -webkit-max-content;
+  width: -moz-max-content;
+  width: max-content;
+}
+
+@media (max-width: 768px) {
+  .jumbotron .headline .cta {
+    margin: 1.5rem 0;
+  }
+}
+
+.jumbotron .case {
+  text-align: center;
+  margin-top: 2rem;
+}
+
+@media (max-width: 768px) {
+  .jumbotron .case {
+    margin-top: 4rem;
+  }
+}
+
+.jumbotron .case img {
+  width: 480px;
+  max-width: 100%;
+  -webkit-transform: translateY(5%);
+          transform: translateY(5%);
+  z-index: 1;
+  position: relative;
+}
+
+.jumbotron .case .widget {
+  z-index: 2;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  background-color: #ffffff;
+  border-radius: 4px;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin: 0 auto;
+  position: relative;
+  width: -webkit-max-content;
+  width: -moz-max-content;
+  width: max-content;
+  -webkit-box-shadow: 0 0 1rem rgba(0, 11, 36, 0.2);
+          box-shadow: 0 0 1rem rgba(0, 11, 36, 0.2);
+  padding: 1rem;
+}
+
+@media (max-width: 992px) {
+  .jumbotron .case .widget {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: 1fr 1fr;
+        grid-template-columns: 1fr 1fr;
+    -ms-grid-rows: auto auto;
+        grid-template-rows: auto auto;
+    -webkit-column-gap: 2rem;
+            column-gap: 2rem;
+  }
+}
+
+@media (max-width: 768px) {
+  .jumbotron .case .widget {
+    width: 100%;
+  }
+}
+
+@media (max-width: 576px) {
+  .jumbotron .case .widget {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+  .jumbotron .case .widget li {
+    margin-bottom: 0.5rem;
+    width: 100%;
+  }
+  .jumbotron .case .widget li:last-child {
+    margin-bottom: 0;
+  }
+}
+
+.jumbotron .case .widget li {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-rows: auto auto auto;
+      grid-template-rows: auto auto auto;
+  padding: 1rem 1.5rem;
+}
+
+.jumbotron .case .widget li span {
+  line-height: 1em;
+  font-weight: 600;
+}
+
+.jumbotron .case .widget li .tag {
+  text-transform: uppercase;
+  margin-bottom: 0.75rem;
+  white-space: nowrap;
+}
+
+.jumbotron .case .widget li .value {
+  font-size: 1.5rem;
+  font-weight: 700;
+  margin-bottom: 0.15rem;
+}
+
+.jumbotron .case .widget li .orang {
+  font-size: 0.75rem;
+}
+
+.jumbotron .case .widget li.positif .value {
+  color: #edbd00;
+}
+
+.jumbotron .case .widget li.sembuh .value {
+  color: #03a30b;
+}
+
+.jumbotron .case .widget li.meninggal .value {
+  color: #e4122a;
 }
 /*# sourceMappingURL=global.css.map */
