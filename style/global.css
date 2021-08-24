@@ -1,0 +1,311 @@
+:root {
+  font-size: 14px;
+}
+
+@media (min-width: 768px) {
+  :root {
+    font-size: 16px;
+  }
+}
+
+*,
+*::before,
+*::after {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+body {
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+  overflow-x: hidden;
+  padding: 0;
+  margin: 0;
+}
+
+img {
+  max-width: 100%;
+}
+
+ul,
+li {
+  list-style: none;
+  padding: 0;
+}
+
+a,
+a:hover,
+a:active {
+  text-decoration: none;
+  color: inherit;
+}
+
+h6,
+h5,
+h4,
+h3,
+h2,
+h1 {
+  margin-top: 0;
+  margin-bottom: 0.5rem;
+  font-weight: 500;
+  line-height: 1.2;
+}
+
+h1 {
+  font-size: calc(1.375rem + 1.2vw);
+}
+
+@media (min-width: 1200px) {
+  h1 {
+    font-size: 2.5rem;
+  }
+}
+
+h2 {
+  font-size: calc(1.325rem + 0.9vw);
+}
+
+@media (min-width: 1200px) {
+  h2 {
+    font-size: 2rem;
+  }
+}
+
+h3 {
+  font-size: calc(1.3rem + 0.6vw);
+}
+
+@media (min-width: 1200px) {
+  h3 {
+    font-size: 1.75rem;
+  }
+}
+
+h4 {
+  font-size: calc(1.275rem + 0.3vw);
+}
+
+@media (min-width: 1200px) {
+  h4 {
+    font-size: 1.5rem;
+  }
+}
+
+h5 {
+  font-size: 1.25rem;
+}
+
+h6 {
+  font-size: 1rem;
+}
+
+p {
+  margin-top: 0;
+  margin-bottom: 1rem;
+}
+
+button {
+  border-radius: 0;
+  outline: none;
+  border: none;
+  cursor: pointer;
+  background-color: inherit;
+}
+
+button:focus:not(:focus-visible) {
+  outline: 0;
+}
+
+input,
+button,
+select,
+optgroup,
+textarea {
+  margin: 0;
+  font-family: inherit;
+  font-size: inherit;
+  line-height: inherit;
+}
+
+.container {
+  max-width: 100%;
+  margin: 0 auto;
+  padding: 0 1rem;
+}
+
+@media (min-width: 576px) {
+  .container {
+    max-width: 540px;
+  }
+}
+
+@media (min-width: 768px) {
+  .container {
+    max-width: 720px;
+    padding: 0 1rem;
+  }
+}
+
+@media (min-width: 992px) {
+  .container {
+    max-width: 960px;
+  }
+}
+
+@media (min-width: 1200px) {
+  .container {
+    max-width: 1140px;
+  }
+}
+
+@media (min-width: 1400px) {
+  .container {
+    max-width: 1320px;
+  }
+}
+
+.text-dark {
+  color: #000b24;
+}
+
+.text-light {
+  color: #ffffff;
+}
+
+.text-red {
+  color: #ff3372;
+}
+
+.bg-blue {
+  background-color: #03267a;
+}
+
+.bg-light {
+  background-color: #ffffff;
+}
+
+.bg-red {
+  background-color: #ff3372;
+}
+
+.bg-none {
+  background-color: transparent;
+}
+
+.navbar {
+  padding: 1rem 0.5rem;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+}
+
+.navbar .wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.navbar .wrapper .navbar-logo {
+  font-size: 1.5rem;
+  font-weight: 700;
+  white-space: nowrap;
+  letter-spacing: 1px;
+}
+
+.navbar .wrapper .navbar-toggler {
+  display: none;
+}
+
+.navbar .wrapper .navbar-nav {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding: 0;
+  overflow: hidden;
+}
+
+.navbar .wrapper .navbar-nav .nav-item {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-right: 1rem;
+}
+
+.navbar .wrapper .navbar-nav .nav-item .nav-link:hover {
+  text-decoration: underline;
+}
+
+.navbar .wrapper .navbar-nav .nav-item .nav-link:active {
+  color: #ff3372;
+}
+
+.navbar .wrapper .navbar-nav .nav-item:last-child {
+  margin-right: 0;
+}
+
+@media (max-width: 768px) {
+  .navbar .wrapper .navbar-toggler {
+    display: block;
+  }
+  .navbar .wrapper .navbar-nav {
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 100%;
+    display: block;
+    z-index: -1;
+    -webkit-transition: 0.3s;
+    transition: 0.3s;
+    padding: 0 1.5rem;
+    height: 0;
+  }
+  .navbar .wrapper .navbar-nav .nav-item {
+    width: 540px;
+    max-width: 100%;
+    margin: 0 auto;
+    padding: 0.5rem 1rem;
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: flex-start;
+  }
+  .navbar .wrapper .navbar-nav .nav-item .nav-link {
+    display: block;
+    width: 100%;
+  }
+  .navbar .wrapper .navbar-nav .nav-item:last-child {
+    margin: 0 auto;
+  }
+  .navbar .wrapper .navbar-nav.open {
+    padding: 0.5rem 1.5rem;
+    height: 225px;
+  }
+}
+
+body {
+  height: 200vh;
+}
+
+.jumbotron {
+  height: 90vh;
+  padding-top: 67px;
+}
+
+.jumbotron h1 {
+  text-align: center;
+  padding: 2rem 0;
+}
+/*# sourceMappingURL=global.css.map */
