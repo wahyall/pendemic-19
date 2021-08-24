@@ -1,5 +1,5 @@
-import navbar from "./navbar.js";
-import jumbotron from "./jumbotron.js";
+import navbar from "./js/navbar.js";
+import jumbotron from "./js/jumbotron.js";
 
 (() => {
   navbar();
