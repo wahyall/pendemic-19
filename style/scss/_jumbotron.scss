@@ -112,6 +112,7 @@
           grid-template-columns: 1fr 1fr;
           grid-template-rows: auto auto;
           column-gap: 2rem;
+          width: 85%;
         }
       }
 
@@ -126,7 +127,7 @@
           column-gap: 0;
 
           li {
-            padding: 1rem;
+            padding: 1rem 1rem !important;
 
             .tag {
               font-size: 0.9rem;
@@ -142,7 +143,7 @@
       li {
         display: grid;
         grid-template-rows: auto auto auto;
-        padding: 1rem 1.5rem;
+        padding: 1rem 2rem;
 
         span {
           line-height: 1em;
