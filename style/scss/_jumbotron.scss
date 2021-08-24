@@ -3,6 +3,12 @@
   max-height: 750px;
   padding-top: 67px;
 
+  @media (min-height: 750px) {
+    & {
+      min-height: 750px;
+    }
+  }
+
   .headline {
     margin-top: 3rem;
 
@@ -21,6 +27,7 @@
       @media (max-width: 768px) {
         & {
           text-align: left;
+          margin-bottom: 1.5rem;
         }
       }
     }
@@ -60,7 +67,7 @@
 
       @media (max-width: 768px) {
         & {
-          margin: 1.5rem 0;
+          margin: 2rem 0;
         }
       }
     }
@@ -71,13 +78,16 @@
     margin-top: 2rem;
 
     @media (max-width: 768px) {
+      margin-top: 0;
+    }
+
+    @media (max-width: 576px) {
       margin-top: 4rem;
     }
 
     img {
       width: 480px;
       max-width: 100%;
-      transform: translateY(5%);
       z-index: 1;
       position: relative;
     }
@@ -93,6 +103,7 @@
       position: relative;
       width: max-content;
       box-shadow: 0 0 1rem rgba($color: $dark, $alpha: 0.2);
+      transform: translateY(-10%);
       padding: 1rem;
 
       @media (max-width: 992px) {
@@ -112,16 +123,18 @@
 
       @media (max-width: 576px) {
         & {
-          display: flex;
-          flex-wrap: wrap;
+          column-gap: 0;
 
           li {
-            margin-bottom: 0.5rem;
-            width: 100%;
-          }
+            padding: 1rem;
 
-          li:last-child {
-            margin-bottom: 0;
+            .tag {
+              font-size: 0.9rem;
+            }
+
+            .value {
+              font-size: 1.35rem;
+            }
           }
         }
       }

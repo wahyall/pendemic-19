@@ -15,6 +15,8 @@
       font-weight: 700;
       white-space: nowrap;
       letter-spacing: 1px;
+      display: flex;
+      align-items: center;
     }
 
     .navbar-toggler {
@@ -25,6 +27,7 @@
       display: flex;
       justify-content: space-between;
       padding: 0;
+      margin: 0;
       overflow: hidden;
 
       .nav-item {
@@ -91,8 +94,4 @@
       }
     }
   }
-}
-
-body {
-  height: 200vh;
 }

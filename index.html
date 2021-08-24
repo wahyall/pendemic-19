@@ -14,7 +14,7 @@
       href="https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200;0,300;0,400;0,600;0,700;0,800;0,900;1,200;1,300;1,400;1,600;1,700;1,800;1,900&display=swap"
       rel="stylesheet"
     />
-    <link rel="stylesheet" href="style/global.css" />
+    <link rel="stylesheet" href="style/index.css" />
     <title>Pendemic-19</title>
   </head>
 
@@ -32,10 +32,10 @@
         </button>
         <ul class="navbar-nav bg-blue">
           <li class="nav-item">
-            <a href="#" class="nav-link">Kasus</a>
+            <a href="#kasus" class="nav-link">Kasus</a>
           </li>
           <li class="nav-item">
-            <a href="#" class="nav-link">Tentang</a>
+            <a href="#pengenalan" class="nav-link">Pengenalan</a>
           </li>
           <li class="nav-item">
             <a href="#" class="nav-link">Gejala</a>
@@ -71,7 +71,7 @@
           </p>
           <a href="#" class="cta">Pelajari Lebih Lanjut</a>
         </div>
-        <div class="case">
+        <div class="case" id="kasus">
           <img src="image/people-wearing-mask.png" />
           <ul class="widget text-dark">
             <li class="positif">
@@ -99,6 +99,42 @@
       </div>
     </header>
     <!-- End Jumbotron -->
+
+    <!-- Pengenalan -->
+    <section class="pengenalan" id="pengenalan">
+      <div class="container wrapper">
+        <div class="left">
+          <h6 class="subtitle">Pengenalan Covid-19</h6>
+          <h2 class="title">Apa itu virus Covid-19?</h2>
+          <p class="desc">
+            Virus Corona atau severe acute respiratory syndrome coronavirus 2
+            (SARS-CoV-2) adalah virus yang menyerang sistem pernapasan. Penyakit
+            karena infeksi virus ini disebut COVID-19. Virus Corona bisa
+            menyebabkan gangguan ringan pada sistem pernapasan, infeksi
+            paru-paru yang berat, hingga kematian.
+          </p>
+          <div class="penyebab">
+            <h6>Penyebab seseorang bisa terjangkit covid-19:</h6>
+            <ul>
+              <li>
+                Tidak sengaja menghirup percikan ludah (droplet) yang keluar
+                saat penderita COVID-19 batuk atau bersin
+              </li>
+              <li>
+                Memegang mulut atau hidung tanpa mencuci tangan terlebih dulu
+                setelah menyentuh benda yang terkena cipratan ludah penderita
+                COVID-19
+              </li>
+              <li>Kontak jarak dekat dengan penderita COVID-19</li>
+            </ul>
+          </div>
+        </div>
+        <div class="right">
+          <img src="image/blood-test.svg" alt="doctor doing test" />
+        </div>
+      </div>
+    </section>
+    <!-- End Pengenalan -->
   </body>
   <script src="script/index.js" type="module"></script>
 </html>
