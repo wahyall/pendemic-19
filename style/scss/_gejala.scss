@@ -1,0 +1,116 @@
+.gejala {
+  padding: 2.5rem 0;
+  margin: 4rem 0;
+
+  .wrapper {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: auto auto;
+    grid-template-areas:
+      "heading heading heading"
+      "list-one image list-two";
+    align-items: center;
+    justify-items: center;
+
+    @media (max-width: 992px) {
+      & {
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: auto auto auto;
+        grid-template-areas:
+          "image image"
+          "heading heading"
+          "list-one list-two";
+        gap: 1.5rem;
+      }
+    }
+
+    @media (max-width: 576px) {
+      & {
+        grid-template-columns: 1fr;
+        grid-template-rows: auto auto auto auto;
+        grid-template-areas:
+          "image"
+          "heading"
+          "list-one"
+          "list-two";
+      }
+    }
+
+    .heading {
+      grid-area: heading;
+      text-align: center;
+
+      .subtitle {
+        font-weight: 600;
+        color: $red;
+        margin-bottom: 0.25rem;
+      }
+
+      .title {
+        font-weight: 700;
+        line-height: 1.2em;
+        margin-bottom: 1rem;
+      }
+    }
+
+    .list {
+      .card {
+        background-color: #f6f7fb;
+        border-radius: 4px;
+        padding: 0.75rem 1.25rem;
+        margin-bottom: 1.25rem;
+
+        @media (max-width: 576px) {
+          & {
+            max-width: 400px;
+          }
+        }
+
+        .name {
+          font-weight: 600;
+          font-size: 1.1rem;
+          margin-bottom: 0.25rem;
+          display: inline-block;
+        }
+
+        .desc {
+          margin-bottom: 0;
+          line-height: 1.4em;
+        }
+      }
+
+      .card:hover {
+        background-color: $blue;
+        color: $light;
+      }
+
+      .card:last-child {
+        margin-bottom: 0;
+      }
+    }
+
+    img {
+      grid-area: image;
+
+      @media (max-width: 992px) {
+        & {
+          width: 500px;
+        }
+      }
+
+      @media (max-width: 768px) {
+        & {
+          width: 400px;
+        }
+      }
+    }
+
+    .list-one {
+      grid-area: list-one;
+    }
+
+    .list-two {
+      grid-area: list-two;
+    }
+  }
+}
