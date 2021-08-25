@@ -215,6 +215,12 @@ textarea {
   z-index: 9;
 }
 
+@media (max-width: 768px) {
+  .navbar {
+    padding: 0.75rem 1rem;
+  }
+}
+
 .navbar .wrapper {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -358,6 +364,7 @@ textarea {
   font-size: 1.2rem;
   text-align: center;
   margin-bottom: 0.5rem;
+  font-weight: 400;
 }
 
 @media (max-width: 1200px) {
@@ -675,6 +682,8 @@ textarea {
   border-radius: 4px;
   padding: 0.75rem 1.25rem;
   margin-bottom: 1.25rem;
+  -webkit-transition: 0.2s;
+  transition: 0.2s;
 }
 
 @media (max-width: 576px) {
@@ -732,5 +741,102 @@ textarea {
   -ms-grid-row: 2;
   -ms-grid-column: 3;
   grid-area: list-two;
+}
+
+.pencegahan {
+  padding: 3rem 0;
+  margin: 4rem 0;
+  background-color: #03267a;
+}
+
+.pencegahan .heading {
+  text-align: center;
+}
+
+.pencegahan .heading .title {
+  color: #ffffff;
+}
+
+.pencegahan .subheading {
+  text-align: center;
+  color: #ffffff;
+  max-width: 750px;
+  margin: 0 auto;
+}
+
+.pencegahan .list {
+  margin-top: 2rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+@media (max-width: 992px) {
+  .pencegahan .list {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+}
+
+.pencegahan .list .card {
+  background-color: #ffffff;
+  border-radius: 6px;
+  overflow: hidden;
+  max-width: 300px;
+  margin: 0 1.5rem;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+
+@media (max-width: 992px) {
+  .pencegahan .list .card {
+    max-width: 40%;
+    margin-bottom: 1.5rem;
+  }
+  .pencegahan .list .card:last-child {
+    margin-bottom: 0;
+  }
+}
+
+@media (max-width: 768px) {
+  .pencegahan .list .card {
+    max-width: 350px;
+  }
+}
+
+.pencegahan .list .card .image {
+  height: 200px;
+  width: 100%;
+  background-color: #f6f7fb;
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.pencegahan .list .card .body {
+  padding: 1rem;
+}
+
+.pencegahan .list .card .body .name {
+  font-weight: 600;
+  font-size: 1.1rem;
+  margin-bottom: 0.25rem;
+  display: inline-block;
+}
+
+.pencegahan .list .card .body .desc {
+  margin-bottom: 0;
+  line-height: 1.4em;
+}
+
+.pencegahan .list .card:hover {
+  -webkit-transform: scale(1.05);
+          transform: scale(1.05);
 }
 /*# sourceMappingURL=index.css.map */
