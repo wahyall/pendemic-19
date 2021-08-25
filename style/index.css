@@ -194,6 +194,18 @@ textarea {
   background-color: transparent;
 }
 
+.heading .subtitle {
+  font-weight: 600;
+  color: #ff3347;
+  margin-bottom: 0.25rem;
+}
+
+.heading .title {
+  font-weight: 700;
+  line-height: 1.2em;
+  margin-bottom: 1rem;
+}
+
 .navbar {
   padding: 1rem 0.5rem;
   position: fixed;
@@ -559,18 +571,6 @@ textarea {
   }
 }
 
-.pengenalan .wrapper .left .subtitle {
-  font-weight: 600;
-  color: #ff3347;
-  margin-bottom: 0.25rem;
-}
-
-.pengenalan .wrapper .left .title {
-  font-weight: 700;
-  line-height: 1.2em;
-  margin-bottom: 1rem;
-}
-
 .pengenalan .wrapper .left .penyebab h6 {
   margin-bottom: 0.5rem;
 }
@@ -668,18 +668,6 @@ textarea {
   -ms-grid-column-span: 3;
   grid-area: heading;
   text-align: center;
-}
-
-.gejala .wrapper .heading .subtitle {
-  font-weight: 600;
-  color: #ff3347;
-  margin-bottom: 0.25rem;
-}
-
-.gejala .wrapper .heading .title {
-  font-weight: 700;
-  line-height: 1.2em;
-  margin-bottom: 1rem;
 }
 
 .gejala .wrapper .list .card {
