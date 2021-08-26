@@ -106,6 +106,7 @@ h6 {
 p {
   margin-top: 0;
   margin-bottom: 1rem;
+  line-height: 1.5em;
 }
 
 button {
@@ -211,5 +212,27 @@ textarea {
     font-weight: 700;
     line-height: 1.2em;
     margin-bottom: 1rem;
+  }
+}
+
+// List
+.bullet-list {
+  margin: 0;
+  padding-left: 1.5rem;
+
+  li {
+    position: relative;
+    margin-bottom: 0.5rem;
+  }
+
+  li::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    transform: translate(-1.25rem, 0.55em);
+    width: 8px;
+    height: 8px;
+    border-radius: 50%;
+    background-color: $red;
   }
 }

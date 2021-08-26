@@ -1,6 +1,6 @@
-.pengenalan {
-  padding: 1rem 0;
-  margin-top: 10rem;
+.vaksinasi {
+  padding: 2.5rem 0;
+  margin: 5rem 0;
 
   @media (max-width: 768px) {
     & {
@@ -35,10 +35,13 @@
         }
       }
 
-      .penyebab {
-        h6 {
-          margin-bottom: 0.5rem;
-        }
+      h6 {
+        margin-bottom: 0.5rem;
+      }
+
+      .value {
+        color: $red;
+        font-weight: 600;
       }
     }
 
