@@ -1,14 +1,15 @@
 .navbar {
-  padding: 1rem 0.5rem;
+  padding: 1rem 0;
   position: fixed;
   top: 0;
   left: 0;
   right: 0;
   z-index: 9;
+  box-shadow: 0 0.75rem 0.75rem rgba($color: $dark, $alpha: 0.1);
 
   @media (max-width: 768px) {
     & {
-      padding: 0.75rem 1rem;
+      padding: 0.75rem 0;
     }
   }
 
@@ -27,6 +28,10 @@
 
     .navbar-toggler {
       display: none;
+
+      img {
+        width: 16px;
+      }
     }
 
     .navbar-nav {
@@ -60,7 +65,8 @@
   @media (max-width: 768px) {
     .wrapper {
       .navbar-toggler {
-        display: block;
+        display: flex;
+        align-items: center;
       }
 
       .navbar-nav {
@@ -97,6 +103,7 @@
         padding: 0.5rem 1.5rem;
         height: 225px;
         border-top: 1px solid $light;
+        box-shadow: 0 0.75rem 0.75rem rgba($color: $dark, $alpha: 0.1);
       }
     }
   }

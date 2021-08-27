@@ -230,17 +230,19 @@ textarea {
 }
 
 .navbar {
-  padding: 1rem 0.5rem;
+  padding: 1rem 0;
   position: fixed;
   top: 0;
   left: 0;
   right: 0;
   z-index: 9;
+  -webkit-box-shadow: 0 0.75rem 0.75rem rgba(0, 11, 36, 0.1);
+          box-shadow: 0 0.75rem 0.75rem rgba(0, 11, 36, 0.1);
 }
 
 @media (max-width: 768px) {
   .navbar {
-    padding: 0.75rem 1rem;
+    padding: 0.75rem 0;
   }
 }
 
@@ -268,6 +270,10 @@ textarea {
 
 .navbar .wrapper .navbar-toggler {
   display: none;
+}
+
+.navbar .wrapper .navbar-toggler img {
+  width: 16px;
 }
 
 .navbar .wrapper .navbar-nav {
@@ -309,7 +315,12 @@ textarea {
 
 @media (max-width: 768px) {
   .navbar .wrapper .navbar-toggler {
-    display: block;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
   }
   .navbar .wrapper .navbar-nav {
     position: absolute;
@@ -344,6 +355,8 @@ textarea {
     padding: 0.5rem 1.5rem;
     height: 225px;
     border-top: 1px solid #ffffff;
+    -webkit-box-shadow: 0 0.75rem 0.75rem rgba(0, 11, 36, 0.1);
+            box-shadow: 0 0.75rem 0.75rem rgba(0, 11, 36, 0.1);
   }
 }
 
@@ -968,6 +981,7 @@ textarea {
   transition: 0.3s;
   -webkit-box-sizing: content-box;
           box-sizing: content-box;
+  margin: 0;
 }
 
 @media (max-width: 768px) {
