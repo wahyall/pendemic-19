@@ -846,18 +846,6 @@ textarea {
   margin: 5rem 0;
 }
 
-@media (max-width: 768px) {
-  .vaksinasi {
-    margin-top: 15rem;
-  }
-}
-
-@media (max-width: 400px) {
-  .vaksinasi {
-    margin-top: 10rem;
-  }
-}
-
 .vaksinasi .wrapper {
   display: -ms-grid;
   display: grid;
@@ -937,14 +925,11 @@ textarea {
   text-align: center;
 }
 
-.faq .wrapper .accordion {
-  border-radius: 8px;
-  overflow: hidden;
-}
-
 .faq .wrapper .accordion .item {
   background-color: #f6f7fb;
+  border-radius: 8px;
   overflow: hidden;
+  margin-bottom: 0.25rem;
 }
 
 .faq .wrapper .accordion .item .question {
@@ -952,15 +937,13 @@ textarea {
   font-size: 1.1rem;
   padding: 0.75rem 1.5rem;
   cursor: pointer;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 30px;
+      grid-template-columns: 1fr 30px;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
 }
 
 @media (max-width: 768px) {
@@ -975,7 +958,7 @@ textarea {
   fill: #000b24;
   width: auto;
   height: 18px;
-  margin-left: 0.5rem;
+  margin-left: 1rem;
 }
 
 .faq .wrapper .accordion .item .answer {

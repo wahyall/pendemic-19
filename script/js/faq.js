@@ -2,11 +2,12 @@ const faq = () => {
   const accordionItem = [...document.querySelectorAll('.accordion .item')];
   const accordionHeight = accordionItem.map(item => getComputedStyle(item.lastElementChild).height);
   
-  accordionItem.forEach((item, i) => {
-    // Set ukuran height pada setiap accordion menjadi 0,
-    // tetapi set accordion pertama untuk terbuka terlebih dahulu (default)
-    i !== 0 ? closeAccordion(i) : openAccordion(i);
+  // Set ukuran height pada setiap accordion menjadi 0,
+  // tetapi set accordion pertama untuk terbuka terlebih dahulu (default)
+  closeAllAccordionExcept(0);
+  openAccordion(0);
 
+  accordionItem.forEach((item, i) => {
     // Jalankan event click pada setiap accordion
     item.firstElementChild.addEventListener('click', function () {
       // Tutup semua accordion yang tidak diklik,

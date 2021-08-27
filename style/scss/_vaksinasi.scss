@@ -2,18 +2,6 @@
   padding: 2.5rem 0;
   margin: 5rem 0;
 
-  @media (max-width: 768px) {
-    & {
-      margin-top: 15rem;
-    }
-  }
-
-  @media (max-width: 400px) {
-    & {
-      margin-top: 10rem;
-    }
-  }
-
   .wrapper {
     display: grid;
     grid-template-columns: 50% 40%;
