@@ -923,6 +923,7 @@ textarea {
 
 .faq .wrapper .heading {
   text-align: center;
+  margin-bottom: 1.5rem;
 }
 
 .faq .wrapper .accordion .item {
