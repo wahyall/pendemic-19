@@ -236,8 +236,8 @@ textarea {
   left: 0;
   right: 0;
   z-index: 9;
-  -webkit-box-shadow: 0 0.75rem 0.75rem rgba(0, 11, 36, 0.1);
-          box-shadow: 0 0.75rem 0.75rem rgba(0, 11, 36, 0.1);
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
 }
 
 @media (max-width: 768px) {

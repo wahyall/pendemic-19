@@ -5,7 +5,7 @@
   left: 0;
   right: 0;
   z-index: 9;
-  box-shadow: 0 0.75rem 0.75rem rgba($color: $dark, $alpha: 0.1);
+  transition: 0.3s;
 
   @media (max-width: 768px) {
     & {
