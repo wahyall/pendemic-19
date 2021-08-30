@@ -347,7 +347,7 @@ textarea {
     z-index: -1;
     -webkit-transition: 0.3s;
     transition: 0.3s;
-    padding: 0 1.5rem;
+    padding: 0;
     height: 0;
     margin: 0;
   }
@@ -355,21 +355,37 @@ textarea {
     width: 540px;
     max-width: 100%;
     margin: 0 auto;
-    padding: 0.5rem 1rem;
     -webkit-box-pack: start;
         -ms-flex-pack: start;
             justify-content: flex-start;
+    position: relative;
+  }
+  .navbar .wrapper .navbar-nav .nav-item:active::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(255, 255, 255, 0.1);
+    z-index: 0;
   }
   .navbar .wrapper .navbar-nav .nav-item .nav-link {
     display: block;
     width: 100%;
+    position: relative;
+    z-index: 1;
+    padding: 0.75rem 1.5rem;
+  }
+  .navbar .wrapper .navbar-nav .nav-item .nav-link:active {
+    color: #ffffff;
   }
   .navbar .wrapper .navbar-nav .nav-item:last-child {
     margin: 0 auto;
   }
   .navbar .wrapper .navbar-nav.open {
-    padding: 0.5rem 1.5rem;
-    height: 225px;
+    padding: 0.5rem 0;
+    height: 267px;
     border-top: 1px solid #ffffff;
     -webkit-box-shadow: 0 0.75rem 0.75rem rgba(0, 11, 36, 0.1);
             box-shadow: 0 0.75rem 0.75rem rgba(0, 11, 36, 0.1);

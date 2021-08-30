@@ -89,7 +89,7 @@
         display: block;
         z-index: -1;
         transition: 0.3s;
-        padding: 0 1.5rem;
+        padding: 0;
         height: 0;
         margin: 0;
 
@@ -97,12 +97,30 @@
           width: 540px;
           max-width: 100%;
           margin: 0 auto;
-          padding: 0.5rem 1rem;
           justify-content: flex-start;
+          position: relative;
+
+          &:active::before {
+            content: "";
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background-color: rgba($color: $light, $alpha: 0.1);
+            z-index: 0;
+          }
 
           .nav-link {
             display: block;
             width: 100%;
+            position: relative;
+            z-index: 1;
+            padding: 0.75rem 1.5rem;
+
+            &:active {
+              color: $light;
+            }
           }
         }
 
@@ -112,8 +130,8 @@
       }
 
       .navbar-nav.open {
-        padding: 0.5rem 1.5rem;
-        height: 225px;
+        padding: 0.5rem 0;
+        height: 267px;
         border-top: 1px solid $light;
         box-shadow: 0 0.75rem 0.75rem rgba($color: $dark, $alpha: 0.1);
       }
