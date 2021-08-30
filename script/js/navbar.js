@@ -6,7 +6,7 @@ const navbar = () => {
     navbarNav.classList.toggle('open');
   });
   document.body.addEventListener('click', function (ev) {
-    if (!ev.target.classList.contains('navbar-toggler') && ev.target !== navbarTogler.querySelector('img')) {
+    if (!ev.target.classList.contains('navbar-toggler')) {
       navbarNav.classList.remove('open');
     }
   });
