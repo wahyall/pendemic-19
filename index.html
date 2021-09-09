@@ -1,374 +1,397 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
-      rel="stylesheet"
-    />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200;0,300;0,400;0,600;0,700;0,800;0,900;1,200;1,300;1,400;1,600;1,700;1,800;1,900&display=swap"
-      rel="stylesheet"
-    />
-    <link rel="stylesheet" href="style/index.css" />
-    <title>Pendemic-19</title>
-  </head>
 
-  <body>
-    <!-- Navbar -->
-    <nav class="navbar text-light bg-blue">
-      <div class="container wrapper">
-        <a href="#" class="navbar-logo">
-          p<span class="text-red">end</span>emi<span class="text-red"
-            >c-19</span
-          >
-        </a>
-        <button class="navbar-toggler text-light bg-none"></button>
-        <ul class="navbar-nav bg-blue">
-          <li class="nav-item">
-            <a href="#kasus" class="nav-link">Kasus</a>
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+    rel="stylesheet" />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200;0,300;0,400;0,600;0,700;0,800;0,900;1,200;1,300;1,400;1,600;1,700;1,800;1,900&display=swap"
+    rel="stylesheet" />
+  <link rel="stylesheet" href="style/index.css" />
+  <title>Pendemic-19</title>
+</head>
+
+<body>
+  <!-- Navbar -->
+  <nav class="navbar text-light bg-blue">
+    <div class="container wrapper">
+      <a href="#" class="navbar-logo">
+        p<span class="text-red">end</span>emi<span class="text-red">c-19</span>
+      </a>
+      <button class="navbar-toggler text-light bg-none"></button>
+      <ul class="navbar-nav bg-blue">
+        <li class="nav-item">
+          <a href="#kasus" class="nav-link">Kasus</a>
+        </li>
+        <li class="nav-item">
+          <a href="#pengenalan" class="nav-link">Pengenalan</a>
+        </li>
+        <li class="nav-item">
+          <a href="#gejala" class="nav-link">Gejala</a>
+        </li>
+        <li class="nav-item">
+          <a href="#pencegahan" class="nav-link">Pencegahan</a>
+        </li>
+        <li class="nav-item">
+          <a href="#vaksinasi" class="nav-link">Vaksinasi</a>
+        </li>
+        <li class="nav-item">
+          <a href="#faq" class="nav-link">FAQ</a>
+        </li>
+      </ul>
+    </div>
+  </nav>
+  <!-- End Navbar -->
+
+  <!-- Jumbotron -->
+  <header class="jumbotron text-light bg-blue">
+    <div class="container wrapper">
+      <div class="headline">
+        <h1>
+          <div>
+            Bersama Lawan <span style="white-space: nowrap">COVID-19</span>
+          </div>
+          <div>Bersama Akhiri Pandemi</div>
+        </h1>
+        <h6>Jaga diri dan sekitar dengan melakukan protokol kesehatan</h6>
+        <h6>
+          Mari bersama kita lawan covid-19, agar pandemi ini dapat segera
+          berakhir
+        </h6>
+        <a href="#pengenalan" class="cta">Pelajari Lebih Lanjut</a>
+      </div>
+      <div class="case" id="kasus">
+        <img src="image/people-wearing-mask.png" />
+        <ul class="widget text-dark">
+          <li class="positif">
+            <span class="tag">Jumlah Positif</span>
+            <span class="value">-</span>
+            <span class="orang">Orang</span>
           </li>
-          <li class="nav-item">
-            <a href="#pengenalan" class="nav-link">Pengenalan</a>
+          <li class="sembuh">
+            <span class="tag">Jumlah Sembuh</span>
+            <span class="value">-</span>
+            <span class="orang">Orang</span>
           </li>
-          <li class="nav-item">
-            <a href="#gejala" class="nav-link">Gejala</a>
+          <li class="meninggal">
+            <span class="tag">Jumlah Meninggal</span>
+            <span class="value">-</span>
+            <span class="orang">Orang</span>
           </li>
-          <li class="nav-item">
-            <a href="#pencegahan" class="nav-link">Pencegahan</a>
-          </li>
-          <li class="nav-item">
-            <a href="#vaksinasi" class="nav-link">Vaksinasi</a>
-          </li>
-          <li class="nav-item">
-            <a href="#faq" class="nav-link">FAQ</a>
+          <li class="dirawat">
+            <span class="tag">Jumlah Dirawat</span>
+            <span class="value">-</span>
+            <span class="orang">Orang</span>
           </li>
         </ul>
       </div>
-    </nav>
-    <!-- End Navbar -->
+    </div>
+  </header>
+  <!-- End Jumbotron -->
 
-    <!-- Jumbotron -->
-    <header class="jumbotron text-light bg-blue">
-      <div class="container wrapper">
-        <div class="headline">
-          <h1>
-            <div>
-              Bersama Lawan <span style="white-space: nowrap">COVID-19</span>
-            </div>
-            <div>Bersama Akhiri Pandemi</div>
-          </h1>
-          <h6>Jaga diri dan sekitar dengan melakukan protokol kesehatan</h6>
-          <h6>
-            Mari bersama kita lawan covid-19, agar pandemi ini dapat segera
-            berakhir
-          </h6>
-          <a href="#pengenalan" class="cta">Pelajari Lebih Lanjut</a>
-        </div>
-        <div class="case" id="kasus">
-          <img src="image/people-wearing-mask.png" />
-          <ul class="widget text-dark">
-            <li class="positif">
-              <span class="tag">Jumlah Positif</span>
-              <span class="value">-</span>
-              <span class="orang">Orang</span>
-            </li>
-            <li class="sembuh">
-              <span class="tag">Jumlah Sembuh</span>
-              <span class="value">-</span>
-              <span class="orang">Orang</span>
-            </li>
-            <li class="meninggal">
-              <span class="tag">Jumlah Meninggal</span>
-              <span class="value">-</span>
-              <span class="orang">Orang</span>
-            </li>
-            <li class="dirawat">
-              <span class="tag">Jumlah Dirawat</span>
-              <span class="value">-</span>
-              <span class="orang">Orang</span>
-            </li>
-          </ul>
-        </div>
-      </div>
-    </header>
-    <!-- End Jumbotron -->
-
-    <!-- Pengenalan -->
-    <section class="pengenalan" id="pengenalan">
-      <div class="container wrapper">
-        <div class="left">
-          <div class="heading">
-            <h6 class="subtitle">Pengenalan Covid-19</h6>
-            <h2 class="title">Apa itu virus <span style="white-space: nowrap;">COVID-19?</span></h2>
-          </div>
-          <p class="desc">
-            Virus Corona atau severe acute respiratory syndrome coronavirus 2
-            (SARS-CoV-2) adalah virus yang menyerang sistem pernapasan. Penyakit
-            karena infeksi virus ini disebut COVID-19. Virus Corona bisa
-            menyebabkan gangguan ringan pada sistem pernapasan, infeksi
-            paru-paru yang berat, hingga kematian.
-          </p>
-          <div class="penyebab">
-            <h6>Penyebab seseorang bisa terjangkit covid-19:</h6>
-            <ul class="bullet-list">
-              <li>
-                Tidak sengaja menghirup percikan ludah (droplet) yang keluar
-                saat penderita COVID-19 batuk atau bersin
-              </li>
-              <li>
-                Memegang mulut atau hidung tanpa mencuci tangan terlebih dulu
-                setelah menyentuh benda yang terkena cipratan ludah penderita
-                COVID-19
-              </li>
-              <li>Kontak jarak dekat dengan penderita COVID-19</li>
-            </ul>
-          </div>
-        </div>
-        <div class="right">
-          <img src="image/blood-test.svg" alt="doctor doing test" />
-        </div>
-      </div>
-    </section>
-    <!-- End Pengenalan -->
-
-    <!-- Gejala -->
-    <section class="gejala" id="gejala">
-      <div class="container wrapper">
+  <!-- Pengenalan -->
+  <section class="pengenalan" id="pengenalan">
+    <div class="container wrapper">
+      <div class="left">
         <div class="heading">
-          <h6 class="subtitle">Gejala Covid-19</h6>
-          <h2 class="title">Apa saja gejala <span style="white-space: nowrap;">COVID-19?</span></h2>
+          <h6 class="subtitle">Pengenalan Covid-19</h6>
+          <h2 class="title">Apa itu virus <span style="white-space: nowrap;">COVID-19?</span></h2>
         </div>
-        <div class="list list-one">
-          <div class="card">
-            <span class="name">Demam</span>
-            <p class="desc">
-              Demam biasanya muncul pada orang yang terinfeksi Covid-19, dengan
-              suhu lebih dari 37,7 derajat celcius.
-            </p>
-          </div>
-          <div class="card">
-            <span class="name">Sesak Napas</span>
-            <p class="desc">
-              Sesak napas biasanya muncul sebagai tanda penyakit mencapai
-              tahapan serius.
-            </p>
-          </div>
-          <div class="card">
-            <span class="name">Batuk Kering</span>
-            <p class="desc">
-              Batuk yang terjadi merupakan batuk kering, tidak mengeluarkan
-              lendir atau dahak dari saluran pernapasan.
-            </p>
-          </div>
-        </div>
-        <img src="image/flu-person.svg" alt="person being flu" />
-        <div class="list list-two">
-          <div class="card">
-            <span class="name">Kehilangan Rasa</span>
-            <p class="desc">
-              Kehilangan kemampuan indra pembau dan pengecap juga menjadi tanda
-              seseorang terpapar Covid-19
-            </p>
-          </div>
-          <div class="card">
-            <span class="name">Mulut Kering</span>
-            <p class="desc">
-              Gejala terjadi akibat kelenjar ludah di mulut tak menghasilkan
-              cukup air liur yang bisa menjaga mulut tetap basah.
-            </p>
-          </div>
-          <div class="card">
-            <span class="name">Kelelahan</span>
-            <p class="desc">
-              Lelah akibat Covid-19 biasanya disertai gejala lain seperti nyeri
-              otot dan sakit tenggorokan.
-            </p>
-          </div>
-        </div>
-      </div>
-    </section>
-    <!-- End Gejala -->
-
-    <!-- Pencegahan -->
-    <section class="pencegahan" id="pencegahan">
-      <div class="container wrapper">
-        <div class="heading">
-          <h6 class="subtitle">Pencegahan Covid-19</h6>
-          <h2 class="title">Bagaimana mencegah penyebaran <span style="white-space: nowrap;">COVID-19?</span></h2>
-        </div>
-        <div class="subheading">
-          Penyebaran covid-19 harus ditekan semaksimal mungkin. Salah satu cara
-          utamanya adalah dengan menerapkan protokol kesehatan 3M secara
-          disiplin.
-        </div>
-        <div class="list">
-          <div class="card">
-            <div
-              class="image"
-              style="background-image: url(image/handwashing.svg)"
-            ></div>
-            <div class="body">
-              <span class="name">Mencuci Tangan</span>
-              <p class="desc">
-                Dengan mencuci tangan menggunakan sabun antibakteri, virus yang
-                ada di tangan bisa dilumpuhkan.
-              </p>
-            </div>
-          </div>
-          <div class="card">
-            <div
-              class="image"
-              style="background-image: url(image/face-mask.svg)"
-            ></div>
-            <div class="body">
-              <span class="name">Memakai Masker</span>
-              <p class="desc">
-                Pastikan untuk selalu menggunakan masker saat sedang berpergian
-                atau keluar rumah.
-              </p>
-            </div>
-          </div>
-          <div class="card">
-            <div
-              class="image"
-              style="background-image: url(image/social-distancing.svg)"
-            ></div>
-            <div class="body">
-              <span class="name">Menjaga Jarak</span>
-              <p class="desc">
-                Selalu disiplin menjaga jarak saat sedang berpergian bersama
-                orang lain kurang lebih 2 meter.
-              </p>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-    <!-- End Pencegahan -->
-
-    <!-- Vaksin -->
-    <section class="vaksinasi" id="vaksinasi">
-      <div class="container wrapper">
-        <div class="left">
-          <div class="heading">
-            <h6 class="subtitle">Vaksinasi Covid-19</h6>
-            <h2 class="title">Kenapa kita harus vaksinasi <span style="white-space: nowrap;">COVID-19?</span></h2>
-          </div>
-          <p class="desc">
-            Pelaksanaan vaksinasi COVID-19 bertujuan untuk memutus rantai
-            penularan penyakit dan menghentikan wabah COVID-19. Vaksin COVID-19
-            bermanfaat untuk memberi perlindungan tubuh agar tidak jatuh sakit
-            akibat COVID-19 dengan cara menimbulkan atau menstimulasi kekebalan
-            spesifik dalam tubuh dengan pemberian vaksin.
-          </p>
-          <h6>Perkembangan vaksinasi covid-19 di Indonesia:</h6>
+        <p class="desc">
+          Virus Corona atau severe acute respiratory syndrome coronavirus 2
+          (SARS-CoV-2) adalah virus yang menyerang sistem pernapasan. Penyakit
+          karena infeksi virus ini disebut COVID-19. Virus Corona bisa
+          menyebabkan gangguan ringan pada sistem pernapasan, infeksi
+          paru-paru yang berat, hingga kematian.
+        </p>
+        <div class="penyebab">
+          <h6>Penyebab seseorang bisa terjangkit covid-19:</h6>
           <ul class="bullet-list">
             <li>
-              Vaksinasi gelombang 1 telah mencapai
-              <span class="value">-</span> orang
+              Tidak sengaja menghirup percikan ludah (droplet) yang keluar
+              saat penderita COVID-19 batuk atau bersin
             </li>
             <li>
-              Vaksinasi gelombang 2 telah mencapai
-              <span class="value">-</span> orang
-            </lic>
+              Memegang mulut atau hidung tanpa mencuci tangan terlebih dulu
+              setelah menyentuh benda yang terkena cipratan ludah penderita
+              COVID-19
+            </li>
+            <li>Kontak jarak dekat dengan penderita COVID-19</li>
           </ul>
         </div>
-        <div class="right">
-          <img src="image/vaccine.svg" alt="vaccine covid-19" />
-        </div>
       </div>
-    </section>
-    <!-- End Vaksin -->
+      <div class="right">
+        <img src="image/blood-test.svg" alt="doctor doing test" />
+      </div>
+    </div>
+  </section>
+  <!-- End Pengenalan -->
 
-    <!-- FAQ -->
-    <section class="faq" id="faq">
-      <div class="container wrapper">
-        <div class="heading">
-          <h6 class="subtitle">FAQ Covid-19</h6>
-          <h2 class="title">Hal yang sering ditanyakan tentang <span style="white-space: nowrap;">COVID-19</span></h2>
+  <!-- Gejala -->
+  <section class="gejala" id="gejala">
+    <div class="container wrapper">
+      <div class="heading">
+        <h6 class="subtitle">Gejala Covid-19</h6>
+        <h2 class="title">Apa saja gejala <span style="white-space: nowrap;">COVID-19?</span></h2>
+      </div>
+      <div class="list list-one">
+        <div class="card">
+          <span class="name">Demam</span>
+          <p class="desc">
+            Demam biasanya muncul pada orang yang terinfeksi Covid-19, dengan
+            suhu lebih dari 37,7 derajat celcius.
+          </p>
         </div>
-        <div class="accordion">
-          <div class="item">
-            <div class="question">
-              <span>Apa itu COVID-19 dan Coronavirus?</span>
-              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><path d="M207.029 381.476L12.686 187.132c-9.373-9.373-9.373-24.569 0-33.941l22.667-22.667c9.357-9.357 24.522-9.375 33.901-.04L224 284.505l154.745-154.021c9.379-9.335 24.544-9.317 33.901.04l22.667 22.667c9.373 9.373 9.373 24.569 0 33.941L240.971 381.476c-9.373 9.372-24.569 9.372-33.942 0z" /></svg>
-            </div>
-            <p class="answer">
-              Virus Corona atau COVID-19 ini merupakan jenis baru dari coronavirus yang menular ke manusia. Virus ini bisa menyerang siapa saja, bayi, anak-anak, orang dewasa, lansia, ibu hamil, maupun ibu menyusui.
+        <div class="card">
+          <span class="name">Sesak Napas</span>
+          <p class="desc">
+            Sesak napas biasanya muncul sebagai tanda penyakit mencapai
+            tahapan serius.
+          </p>
+        </div>
+        <div class="card">
+          <span class="name">Batuk Kering</span>
+          <p class="desc">
+            Batuk yang terjadi merupakan batuk kering, tidak mengeluarkan
+            lendir atau dahak dari saluran pernapasan.
+          </p>
+        </div>
+      </div>
+      <img src="image/flu-person.svg" alt="person being flu" />
+      <div class="list list-two">
+        <div class="card">
+          <span class="name">Kehilangan Rasa</span>
+          <p class="desc">
+            Kehilangan kemampuan indra pembau dan pengecap juga menjadi tanda
+            seseorang terpapar Covid-19
+          </p>
+        </div>
+        <div class="card">
+          <span class="name">Mulut Kering</span>
+          <p class="desc">
+            Gejala terjadi akibat kelenjar ludah di mulut tak menghasilkan
+            cukup air liur yang bisa menjaga mulut tetap basah.
+          </p>
+        </div>
+        <div class="card">
+          <span class="name">Kelelahan</span>
+          <p class="desc">
+            Lelah akibat Covid-19 biasanya disertai gejala lain seperti nyeri
+            otot dan sakit tenggorokan.
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- End Gejala -->
+
+  <!-- Pencegahan -->
+  <section class="pencegahan" id="pencegahan">
+    <div class="container wrapper">
+      <div class="heading">
+        <h6 class="subtitle">Pencegahan Covid-19</h6>
+        <h2 class="title">Bagaimana mencegah penyebaran <span style="white-space: nowrap;">COVID-19?</span></h2>
+      </div>
+      <div class="subheading">
+        Penyebaran covid-19 harus ditekan semaksimal mungkin. Salah satu cara
+        utamanya adalah dengan menerapkan protokol kesehatan 3M secara
+        disiplin.
+      </div>
+      <div class="list">
+        <div class="card">
+          <div class="image" style="background-image: url(image/handwashing.svg)"></div>
+          <div class="body">
+            <span class="name">Mencuci Tangan</span>
+            <p class="desc">
+              Dengan mencuci tangan menggunakan sabun antibakteri, virus yang
+              ada di tangan bisa dilumpuhkan.
             </p>
           </div>
-          <div class="item">
-            <div class="question">
-              <span>Bagaimana COVID-19 menular?</span>
-              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><path d="M207.029 381.476L12.686 187.132c-9.373-9.373-9.373-24.569 0-33.941l22.667-22.667c9.357-9.357 24.522-9.375 33.901-.04L224 284.505l154.745-154.021c9.379-9.335 24.544-9.317 33.901.04l22.667 22.667c9.373 9.373 9.373 24.569 0 33.941L240.971 381.476c-9.373 9.372-24.569 9.372-33.942 0z" /></svg>
-            </div>
-            <p class="answer">
-              Penularan terjadi melalui droplet (butir-butir tetesan cairan) dari hidung atau mulut yang menyebar saat pembawa virus COVID-19 batuk, bersin atau meler.
+        </div>
+        <div class="card">
+          <div class="image" style="background-image: url(image/face-mask.svg)"></div>
+          <div class="body">
+            <span class="name">Memakai Masker</span>
+            <p class="desc">
+              Pastikan untuk selalu menggunakan masker saat sedang berpergian
+              atau keluar rumah.
             </p>
           </div>
-          <div class="item">
-            <div class="question">
-              <span>Berapa lama tetesan cairan berisi virus itu bisa hidup di permukaan atau menempel pada benda?</span>
-              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><path d="M207.029 381.476L12.686 187.132c-9.373-9.373-9.373-24.569 0-33.941l22.667-22.667c9.357-9.357 24.522-9.375 33.901-.04L224 284.505l154.745-154.021c9.379-9.335 24.544-9.317 33.901.04l22.667 22.667c9.373 9.373 9.373 24.569 0 33.941L240.971 381.476c-9.373 9.372-24.569 9.372-33.942 0z" /></svg>
-            </div>
-            <p class="answer">
-              Studi menunjukkan bahwa virus korona dapat bertahan selama beberapa jam di permukaan. Ini dapat bervariasi di dalam kondisi yang berbeda.
-            </p>
-          </div>
-          <div class="item">
-            <div class="question">
-              <span>Jika seseorang terinfeksi virus ini, berapa lama sampai muncul gejala?</span>
-              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><path d="M207.029 381.476L12.686 187.132c-9.373-9.373-9.373-24.569 0-33.941l22.667-22.667c9.357-9.357 24.522-9.375 33.901-.04L224 284.505l154.745-154.021c9.379-9.335 24.544-9.317 33.901.04l22.667 22.667c9.373 9.373 9.373 24.569 0 33.941L240.971 381.476c-9.373 9.372-24.569 9.372-33.942 0z" /></svg>
-            </div>
-            <p class="answer">
-              Masa inkubasi (dari masuknya virus ke dalam tubuh sampai munculnya gejala awal) adalah 1 – 14 hari, dengan rata-rata timbulnya gejala selama 5 hari.
-            </p>
-          </div>
-          <div class="item">
-            <div class="question">
-              <span>Apakah COVID-19 sudah ada obatnya?</span>
-              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><path d="M207.029 381.476L12.686 187.132c-9.373-9.373-9.373-24.569 0-33.941l22.667-22.667c9.357-9.357 24.522-9.375 33.901-.04L224 284.505l154.745-154.021c9.379-9.335 24.544-9.317 33.901.04l22.667 22.667c9.373 9.373 9.373 24.569 0 33.941L240.971 381.476c-9.373 9.372-24.569 9.372-33.942 0z" /></svg>
-            </div>
-            <p class="answer">
-              Sampai saat ini, obat spesifik untuk COVID-19 belum ditemukan. Akan tetapi, penelitian terus dilakukan oleh berbagai pihak. Penanganan saat ini fokus pada gejala yang timbul dari penderita.
-            </p>
-          </div>
-          <div class="item">
-            <div class="question">
-              <span>Apa itu vaksinasi?</span>
-              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><path d="M207.029 381.476L12.686 187.132c-9.373-9.373-9.373-24.569 0-33.941l22.667-22.667c9.357-9.357 24.522-9.375 33.901-.04L224 284.505l154.745-154.021c9.379-9.335 24.544-9.317 33.901.04l22.667 22.667c9.373 9.373 9.373 24.569 0 33.941L240.971 381.476c-9.373 9.372-24.569 9.372-33.942 0z" /></svg>
-            </div>
-            <p class="answer">
-              Vaksinasi adalah pemberian Vaksin dalam rangka menimbulkan atau meningkatkan kekebalan seseorang secara aktif terhadap suatu penyakit, sehingga apabila suatu saat terjangkit dengan penyakit tersebut tidak akan sakit atau hanya mengalami sakit ringan dan tidak menjadi sumber penularan.
-            </p>
-          </div>
-          <div class="item">
-            <div class="question">
-              <span>Apakah vaksin itu obat?</span>
-              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><path d="M207.029 381.476L12.686 187.132c-9.373-9.373-9.373-24.569 0-33.941l22.667-22.667c9.357-9.357 24.522-9.375 33.901-.04L224 284.505l154.745-154.021c9.379-9.335 24.544-9.317 33.901.04l22.667 22.667c9.373 9.373 9.373 24.569 0 33.941L240.971 381.476c-9.373 9.372-24.569 9.372-33.942 0z" /></svg>
-            </div>
-            <p class="answer">
-              Vaksin bukanlah obat, vaksin mendorong pembentukan kekebalan spesifik tubuh agar terhindar dari tertular ataupun kemungkinan sakit berat.
-            </p>
-          </div>
-          <div class="item">
-            <div class="question">
-              <span>Apa yang dimaksud dengan kekebalan kelompok (herd immunity)?</span>
-              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><path d="M207.029 381.476L12.686 187.132c-9.373-9.373-9.373-24.569 0-33.941l22.667-22.667c9.357-9.357 24.522-9.375 33.901-.04L224 284.505l154.745-154.021c9.379-9.335 24.544-9.317 33.901.04l22.667 22.667c9.373 9.373 9.373 24.569 0 33.941L240.971 381.476c-9.373 9.372-24.569 9.372-33.942 0z" /></svg>
-            </div>
-            <p class="answer">
-              Kekebalan kelompok atau herd Immunity merupakan situasi dimana sebagian besar masyarakat terlindung/kebal terhadap penyakit tertentu. Melalui kekebalan kelompok, akan timbul dampak tidak langsung (indirect effect), yaitu turut terlindunginya kelompok masyarakat yang rentan dan bukan merupakan sasaran vaksinasi.
+        </div>
+        <div class="card">
+          <div class="image" style="background-image: url(image/social-distancing.svg)"></div>
+          <div class="body">
+            <span class="name">Menjaga Jarak</span>
+            <p class="desc">
+              Selalu disiplin menjaga jarak saat sedang berpergian bersama
+              orang lain kurang lebih 2 meter.
             </p>
           </div>
         </div>
       </div>
-    </section>
-    <!-- End FAQ -->
-  </body>
-  <script src="script/index.js" type="module"></script>
+    </div>
+  </section>
+  <!-- End Pencegahan -->
+
+  <!-- Vaksin -->
+  <section class="vaksinasi" id="vaksinasi">
+    <div class="container wrapper">
+      <div class="left">
+        <div class="heading">
+          <h6 class="subtitle">Vaksinasi Covid-19</h6>
+          <h2 class="title">Kenapa kita harus vaksinasi <span style="white-space: nowrap;">COVID-19?</span></h2>
+        </div>
+        <p class="desc">
+          Pelaksanaan vaksinasi COVID-19 bertujuan untuk memutus rantai
+          penularan penyakit dan menghentikan wabah COVID-19. Vaksin COVID-19
+          bermanfaat untuk memberi perlindungan tubuh agar tidak jatuh sakit
+          akibat COVID-19 dengan cara menimbulkan atau menstimulasi kekebalan
+          spesifik dalam tubuh dengan pemberian vaksin.
+        </p>
+        <h6>Perkembangan vaksinasi covid-19 di Indonesia:</h6>
+        <ul class="bullet-list">
+          <li>
+            Vaksinasi gelombang 1 telah mencapai
+            <span class="value">-</span> orang
+          </li>
+          <li>
+            Vaksinasi gelombang 2 telah mencapai
+            <span class="value">-</span> orang
+            </lic>
+        </ul>
+      </div>
+      <div class="right">
+        <img src="image/vaccine.svg" alt="vaccine covid-19" />
+      </div>
+    </div>
+  </section>
+  <!-- End Vaksin -->
+
+  <!-- FAQ -->
+  <section class="faq" id="faq">
+    <div class="container wrapper">
+      <div class="heading">
+        <h6 class="subtitle">FAQ Covid-19</h6>
+        <h2 class="title">Hal yang sering ditanyakan tentang <span style="white-space: nowrap;">COVID-19</span></h2>
+      </div>
+      <div class="accordion">
+        <div class="item">
+          <div class="question">
+            <span>Apa itu COVID-19 dan Coronavirus?</span>
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512">
+              <path
+                d="M207.029 381.476L12.686 187.132c-9.373-9.373-9.373-24.569 0-33.941l22.667-22.667c9.357-9.357 24.522-9.375 33.901-.04L224 284.505l154.745-154.021c9.379-9.335 24.544-9.317 33.901.04l22.667 22.667c9.373 9.373 9.373 24.569 0 33.941L240.971 381.476c-9.373 9.372-24.569 9.372-33.942 0z" />
+            </svg>
+          </div>
+          <p class="answer">
+            Virus Corona atau COVID-19 ini merupakan jenis baru dari coronavirus yang menular ke manusia. Virus ini bisa
+            menyerang siapa saja, bayi, anak-anak, orang dewasa, lansia, ibu hamil, maupun ibu menyusui.
+          </p>
+        </div>
+        <div class="item">
+          <div class="question">
+            <span>Bagaimana COVID-19 menular?</span>
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512">
+              <path
+                d="M207.029 381.476L12.686 187.132c-9.373-9.373-9.373-24.569 0-33.941l22.667-22.667c9.357-9.357 24.522-9.375 33.901-.04L224 284.505l154.745-154.021c9.379-9.335 24.544-9.317 33.901.04l22.667 22.667c9.373 9.373 9.373 24.569 0 33.941L240.971 381.476c-9.373 9.372-24.569 9.372-33.942 0z" />
+            </svg>
+          </div>
+          <p class="answer">
+            Penularan terjadi melalui droplet (butir-butir tetesan cairan) dari hidung atau mulut yang menyebar saat
+            pembawa virus COVID-19 batuk, bersin atau meler.
+          </p>
+        </div>
+        <div class="item">
+          <div class="question">
+            <span>Berapa lama tetesan cairan berisi virus itu bisa hidup di permukaan atau menempel pada benda?</span>
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512">
+              <path
+                d="M207.029 381.476L12.686 187.132c-9.373-9.373-9.373-24.569 0-33.941l22.667-22.667c9.357-9.357 24.522-9.375 33.901-.04L224 284.505l154.745-154.021c9.379-9.335 24.544-9.317 33.901.04l22.667 22.667c9.373 9.373 9.373 24.569 0 33.941L240.971 381.476c-9.373 9.372-24.569 9.372-33.942 0z" />
+            </svg>
+          </div>
+          <p class="answer">
+            Studi menunjukkan bahwa virus korona dapat bertahan selama beberapa jam di permukaan. Ini dapat bervariasi
+            di dalam kondisi yang berbeda.
+          </p>
+        </div>
+        <div class="item">
+          <div class="question">
+            <span>Jika seseorang terinfeksi virus ini, berapa lama sampai muncul gejala?</span>
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512">
+              <path
+                d="M207.029 381.476L12.686 187.132c-9.373-9.373-9.373-24.569 0-33.941l22.667-22.667c9.357-9.357 24.522-9.375 33.901-.04L224 284.505l154.745-154.021c9.379-9.335 24.544-9.317 33.901.04l22.667 22.667c9.373 9.373 9.373 24.569 0 33.941L240.971 381.476c-9.373 9.372-24.569 9.372-33.942 0z" />
+            </svg>
+          </div>
+          <p class="answer">
+            Masa inkubasi (dari masuknya virus ke dalam tubuh sampai munculnya gejala awal) adalah 1 – 14 hari, dengan
+            rata-rata timbulnya gejala selama 5 hari.
+          </p>
+        </div>
+        <div class="item">
+          <div class="question">
+            <span>Apakah COVID-19 sudah ada obatnya?</span>
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512">
+              <path
+                d="M207.029 381.476L12.686 187.132c-9.373-9.373-9.373-24.569 0-33.941l22.667-22.667c9.357-9.357 24.522-9.375 33.901-.04L224 284.505l154.745-154.021c9.379-9.335 24.544-9.317 33.901.04l22.667 22.667c9.373 9.373 9.373 24.569 0 33.941L240.971 381.476c-9.373 9.372-24.569 9.372-33.942 0z" />
+            </svg>
+          </div>
+          <p class="answer">
+            Sampai saat ini, obat spesifik untuk COVID-19 belum ditemukan. Akan tetapi, penelitian terus dilakukan oleh
+            berbagai pihak. Penanganan saat ini fokus pada gejala yang timbul dari penderita.
+          </p>
+        </div>
+        <div class="item">
+          <div class="question">
+            <span>Apa itu vaksinasi?</span>
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512">
+              <path
+                d="M207.029 381.476L12.686 187.132c-9.373-9.373-9.373-24.569 0-33.941l22.667-22.667c9.357-9.357 24.522-9.375 33.901-.04L224 284.505l154.745-154.021c9.379-9.335 24.544-9.317 33.901.04l22.667 22.667c9.373 9.373 9.373 24.569 0 33.941L240.971 381.476c-9.373 9.372-24.569 9.372-33.942 0z" />
+            </svg>
+          </div>
+          <p class="answer">
+            Vaksinasi adalah pemberian Vaksin dalam rangka menimbulkan atau meningkatkan kekebalan seseorang secara
+            aktif terhadap suatu penyakit, sehingga apabila suatu saat terjangkit dengan penyakit tersebut tidak akan
+            sakit atau hanya mengalami sakit ringan dan tidak menjadi sumber penularan.
+          </p>
+        </div>
+        <div class="item">
+          <div class="question">
+            <span>Apakah vaksin itu obat?</span>
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512">
+              <path
+                d="M207.029 381.476L12.686 187.132c-9.373-9.373-9.373-24.569 0-33.941l22.667-22.667c9.357-9.357 24.522-9.375 33.901-.04L224 284.505l154.745-154.021c9.379-9.335 24.544-9.317 33.901.04l22.667 22.667c9.373 9.373 9.373 24.569 0 33.941L240.971 381.476c-9.373 9.372-24.569 9.372-33.942 0z" />
+            </svg>
+          </div>
+          <p class="answer">
+            Vaksin bukanlah obat, vaksin mendorong pembentukan kekebalan spesifik tubuh agar terhindar dari tertular
+            ataupun kemungkinan sakit berat.
+          </p>
+        </div>
+        <div class="item">
+          <div class="question">
+            <span>Apa yang dimaksud dengan kekebalan kelompok (herd immunity)?</span>
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512">
+              <path
+                d="M207.029 381.476L12.686 187.132c-9.373-9.373-9.373-24.569 0-33.941l22.667-22.667c9.357-9.357 24.522-9.375 33.901-.04L224 284.505l154.745-154.021c9.379-9.335 24.544-9.317 33.901.04l22.667 22.667c9.373 9.373 9.373 24.569 0 33.941L240.971 381.476c-9.373 9.372-24.569 9.372-33.942 0z" />
+            </svg>
+          </div>
+          <p class="answer">
+            Kekebalan kelompok atau herd Immunity merupakan situasi dimana sebagian besar masyarakat terlindung/kebal
+            terhadap penyakit tertentu. Melalui kekebalan kelompok, akan timbul dampak tidak langsung (indirect effect),
+            yaitu turut terlindunginya kelompok masyarakat yang rentan dan bukan merupakan sasaran vaksinasi.
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- End FAQ -->
+</body>
+<script src="script/index.js" type="module"></script>
+
 </html>

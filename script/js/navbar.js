@@ -8,7 +8,7 @@ const navbar = () => {
     navbarNav.classList.toggle('open');
   });
   document.body.addEventListener('click', function (ev) {
-    if (!ev.target.classList.contains('navbar-toggler')) {
+    if (!ev.path.includes(navbarTogler)) {
       navbarNav.classList.remove('open');
     }
   });
