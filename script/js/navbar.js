@@ -8,7 +8,8 @@ const navbar = () => {
     navbarNav.classList.toggle('open');
   });
   document.body.addEventListener('click', function (ev) {
-    if (!ev.path.includes(navbarTogler)) {
+    const path = ev.composedPath();
+    if (!path.includes(navbarTogler)) {
       navbarNav.classList.remove('open');
     }
   });
